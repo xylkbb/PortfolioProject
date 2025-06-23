@@ -1,5 +1,4 @@
 
-    // Setup triggers and sliders
     const sliderData = [
       { triggerId: 'trigger-img1', slideId: 'slide-img1', visibleClass: 'visible1' },
       { triggerId: 'trigger-img2', slideId: 'slide-img2', visibleClass: 'visible2' },
@@ -12,14 +11,14 @@
     const container = document.querySelector('.container');
     let isDragging = false;
     let dragImg = null, offsetX = 0, offsetY = 0;
-    // Show corresponding slider on trigger click
+
     sliderData.forEach(({ triggerId, slideId, visibleClass }) => {
       const trigger = document.getElementById(triggerId);
       const slider = document.getElementById(slideId);
       trigger.addEventListener('click', () => {
         slider.classList.add(visibleClass);
       });
-      // Drag logic
+  
       slider.addEventListener('mousedown', (e) => {
         if (!slider.classList.contains(visibleClass)) return;
         isDragging = true;
@@ -30,10 +29,10 @@
         document.body.style.userSelect = 'none';
       });
     });
-    // Move logic
+  
     document.addEventListener('mousemove', (e) => {
       if (!isDragging || !dragImg) return;
-      // Restrict inside container
+
       const minX = 0, maxX = container.offsetWidth - dragImg.offsetWidth;
       const minY = 0, maxY = container.offsetHeight - dragImg.offsetHeight;
       let newX = e.clientX - container.getBoundingClientRect().left - offsetX;
@@ -42,7 +41,7 @@
       newY = Math.max(minY, Math.min(maxY, newY));
       dragImg.style.left = newX + "px";
       dragImg.style.top = newY + "px";
-      // Overlap check
+  
       const dragRect = dragImg.getBoundingClientRect();
       const targetRect = targetImg.getBoundingClientRect();
       if (
@@ -56,13 +55,13 @@
         targetImg.classList.remove('hovered');
       }
     });
-    // Drop logic
+
     document.addEventListener('mouseup', () => {
       if (!isDragging || !dragImg) return;
       isDragging = false;
       dragImg.classList.remove('dragging');
       document.body.style.userSelect = '';
-      // Overlap check for drop
+
       const dragRect = dragImg.getBoundingClientRect();
       const targetRect = targetImg.getBoundingClientRect();
       targetImg.classList.remove('hovered');
@@ -72,7 +71,6 @@
         dragRect.bottom > targetRect.top &&
         dragRect.top < targetRect.bottom
       ) {
-        // Redirect based on which image was dragged
         const url = dragImg.getAttribute('data-url');
         if (url) window.location.href = url;
       }
