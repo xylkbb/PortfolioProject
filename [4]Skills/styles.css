@@ -1,0 +1,58 @@
+body {
+    background-image: url(images/wall.PNG);
+}
+
+
+.header {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    padding: 20px;
+}
+
+
+.about-me {
+    text-align: center;;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #c9745773;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.LuaLogo {
+    width: 55px;
+    height: 55px;
+}
+
+.JavaLogo {
+    width: 75px;
+    height: 55px;
+}
+
+.JavaScriptLogo {
+    width: 105px;
+    height: 55px;
+}
+
+.HTMLLogo {
+    width: 45px;
+    height: 55px;
+}
+
+.CSSLogo {
+    width: 55px;
+    height: 55px;
+}
+
+.KotlinLogo {
+    width: 55px;
+    height: 55px;
+}
+
+.PythonLogo {
+    width: 55px;
+    height: 55px;
+}
