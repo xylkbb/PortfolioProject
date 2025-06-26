@@ -7,14 +7,19 @@
       { triggerId: 'trigger-img5', slideId: 'slide-img5', visibleClass: 'visible5' },
       { triggerId: 'trigger-img6', slideId: 'slide-img6', visibleClass: 'visible6' },
     ];
+
+
     const targetImg = document.getElementById('target-img');
     const container = document.querySelector('.container');
+
+
     let isDragging = false;
     let dragImg = null, offsetX = 0, offsetY = 0;
 
     sliderData.forEach(({ triggerId, slideId, visibleClass }) => {
       const trigger = document.getElementById(triggerId);
       const slider = document.getElementById(slideId);
+
       trigger.addEventListener('click', () => {
         slider.classList.add(visibleClass);
       });
@@ -35,15 +40,22 @@
 
       const minX = 0, maxX = container.offsetWidth - dragImg.offsetWidth;
       const minY = 0, maxY = container.offsetHeight - dragImg.offsetHeight;
+
+
       let newX = e.clientX - container.getBoundingClientRect().left - offsetX;
       let newY = e.clientY - container.getBoundingClientRect().top - offsetY;
+
+
       newX = Math.max(minX, Math.min(maxX, newX));
       newY = Math.max(minY, Math.min(maxY, newY));
+
+
       dragImg.style.left = newX + "px";
       dragImg.style.top = newY + "px";
   
       const dragRect = dragImg.getBoundingClientRect();
       const targetRect = targetImg.getBoundingClientRect();
+
       if (
         dragRect.right > targetRect.left &&
         dragRect.left < targetRect.right &&
@@ -58,12 +70,15 @@
 
     document.addEventListener('mouseup', () => {
       if (!isDragging || !dragImg) return;
+
       isDragging = false;
+
       dragImg.classList.remove('dragging');
       document.body.style.userSelect = '';
 
       const dragRect = dragImg.getBoundingClientRect();
       const targetRect = targetImg.getBoundingClientRect();
+
       targetImg.classList.remove('hovered');
       if (
         dragRect.right > targetRect.left &&
@@ -72,6 +87,7 @@
         dragRect.top < targetRect.bottom
       ) {
         const url = dragImg.getAttribute('data-url');
+        
         if (url) window.location.href = url;
       }
       dragImg = null;

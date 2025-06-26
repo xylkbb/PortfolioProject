@@ -6,8 +6,44 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+
+<h1 class="header"> Contact Page</h1>
+
+<div class="about-me">
+    <p>
+     
+      This is the contact page for my website, if there's any issues with the website, any suggestions, or any follow-up questions that need to be done can be acted upon here. All emails directly go to my personal email, and it will be checked eventually. 
+
+    </p>
+    <p>
+    </p>
+
+
+<div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Your name:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Your email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Your message:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
+
+</div>
+
 <p>
-Cnotact
+
 
 </p>
 
