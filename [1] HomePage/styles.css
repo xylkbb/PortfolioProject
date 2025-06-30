@@ -11,7 +11,78 @@ body {
 }
 
 
+#mySidenav a {
+  position: fixed; 
+  left: -80px; 
+  transition: 0.3s; 
+  padding: 15px; 
+  width: 100px; 
+  text-decoration: none; 
+  font-size: 20px; 
+  color: white; 
+  border-radius: 0 5px 5px 0; 
+}
 
+#mySidenav a:hover {
+  left: 0; 
+}
+
+
+#home {
+  top: 20px;
+  background-image: url('images/DiskCase.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about {
+  top: 80px;
+    background-image: url('images/DiskCase.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#past {
+  top: 140px;
+    background-image: url('images/DiskCase.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#skills {
+  top: 200px;
+    background-image: url('images/DiskCase.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#contact {
+  top: 260px;
+    background-image: url('images/DiskCase.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#future {
+  top: 320px;
+    background-image: url('images/DiskCase.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#process {
+  top: 380px;
+    background-image: url('images/DiskCase.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
     .container {
@@ -55,7 +126,7 @@ body {
       transition: top 0.5s cubic-bezier(.36,2.08,.54,.93), box-shadow 0.2s;
       z-index: 2;
       pointer-events: auto;
-      background: white;
+     
     }
     .slide-img.visible1 { left: 20px; }
     .slide-img.visible2 { left: 110px; }
@@ -73,13 +144,13 @@ body {
       position: absolute;
       right: 40px;
       top: 180px;
-      width: 100px;
+      width: 300px;
       border-radius: 8px;
       box-shadow: 0 0 6px #0001;
       z-index: 1;
       border: 2px solid transparent;
       transition: border-color 0.2s;
-      background: #fff;
+      
     }
     #target-img.hovered { border-color: #3b82f6; }
     .label {
