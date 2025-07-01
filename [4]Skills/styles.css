@@ -271,3 +271,19 @@ opacity: 0;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.note {
+      position: absolute;
+      font-size: 2.5rem;
+      pointer-events: auto;
+      cursor: pointer;
+      user-select: none;
+      transition: filter 0.2s;
+      filter: drop-shadow(0 0 6px #fff9);
+    }
+    .note.caught {
+      filter: drop-shadow(0 0 24px #ffe066);
+    }
+    .note.falling {
+      transition: none;
+    }
