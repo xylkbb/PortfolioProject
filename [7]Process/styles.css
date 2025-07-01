@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/wall.PNG);
+    background-image: url(images/wallv2.PNG);
 }
 
 
@@ -12,7 +12,11 @@ body {
 
 
 .about-me {
+    font-style: italic;
+    font-family:  "Monaco", "Courier New", monospace;
     text-align: center;;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
     width: 80%;
     margin: 0 auto;
     background-color: #c9745773;

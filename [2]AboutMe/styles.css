@@ -1,21 +1,26 @@
 body {
-    background-image: url(images/wall.PNG);
+  background-color: brown;
+    background-image: url(images/wallv2.PNG);
 }
 
 
 .header {
     text-align: center;
-    color: black;
+    color: rgb(231, 209, 209);
     font-size: 32px;
     padding: 20px;
 }
 
 
 .about-me {
+  font-style: italic;
+    font-family:  "Monaco", "Courier New", monospace;
     text-align: center;;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
     width: 80%;
     margin: 0 auto;
-    background-color: #c9745773;
+    background-color: #280c0373;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -37,22 +42,22 @@ body {
 }
 
 #mySidenav a {
-  position: fixed; /* Position them relative to the browser window */
-  left: -80px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  position: fixed; 
+  left: -80px; 
+  transition: 0.3s; 
+  padding: 15px; 
+  width: 100px; 
+  text-decoration: none; 
+  font-size: 20px; 
+  color: white; 
+  border-radius: 0 5px 5px 0; 
 }
 
 #mySidenav a:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
+  left: 0; 
 }
 
-/* The about link: 20px from the top with a green background */
+
 #home {
   top: 20px;
   background-image: url('images/DiskCase.png');

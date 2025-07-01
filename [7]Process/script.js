@@ -58,7 +58,7 @@
     }
 
     document.addEventListener('mousemove', e => (mouse.x = e.clientX, mouse.y = e.clientY));
-    setInterval(spawnNote, 3000);
+    setInterval(spawnNote, 500);
     animateNotes();
 
     Object.assign(notesLayer.style, {

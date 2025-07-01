@@ -1,21 +1,29 @@
 body {
-    background-image: url(images/wall.PNG);
+    background-image: url(images/wallv2.PNG);
 }
 
 
 .header {
     text-align: center;
-    color: black;
+    color: rgb(224, 209, 209);
     font-size: 32px;
     padding: 20px;
 }
 
 
+#PosterTitle {
+  transform: translate(00px, -780px);
+  text-align: center;
+}
 .about-me {
+    font-style: italic;
+    font-family:  "Monaco", "Courier New", monospace;
     text-align: center;;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
     width: 80%;
     margin: 0 auto;
-    background-color: #c9745773;
+    
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
