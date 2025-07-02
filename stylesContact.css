@@ -1,11 +1,11 @@
 body {
-    background-image: url(images/wallv2.PNG);
+    background-image: url(wallv2.PNG);
 }
 
 
 .header {
     text-align: center;
-    color: rgb(216, 209, 209);
+    color: rgb(235, 224, 224);
     font-size: 32px;
     padding: 20px;
 }
@@ -32,79 +32,6 @@ opacity: 0;
             }
         }
 
-
-.skill-rating1 {
-    color: rgb(32, 13, 138);
-}
-
-.skill-rating2 {
-    color: rgb(212, 137, 6);
-}
-
-.skill-rating3 {
-    color: rgb(193, 150, 19);
-}
-.skill-rating4 {
-    color: rgb(205, 95, 11);
-}
-.skill-rating5 {
-    color: rgb(13, 128, 151);
-}
-.star2 {
-    color: rgb(13, 128, 151);
-}
-.star3 {
-    color: rgb(215, 211, 17);
-}
-
-.star4 {
-    color: rgb(21, 155, 179);
-}
-.star5 {
-    color: rgb(179, 92, 21);
-}
-
-.track-list {
-    background-image: url(images/Newspaper.jpg);
-    text-align: center;;
-    width: 65%;
-    margin: 0 auto;
-    background-color: #ffffff73;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
-}
-
-
-.barCode {
-    text-align: center;
-    width: 75px;
-    height: 35px;
-}
-
-.section {
-    padding: 1rem;
-}
-
-.section__paragraph {
-    margin: 1rem 0;
-    transform: translateY(20px);
-    opacity: 0;
-    transition: 1s ease;
-}
-
-.section_paragraph--visible {
-    transform: translateY(0);
-    opacity: 1;;
-}
-
-.Logo {
-    text-align: center;
-    width: 35px;
-    height: 35px;
-}
-
 .LuaLogo {
     width: 55px;
     height: 55px;
@@ -117,18 +44,6 @@ opacity: 0;
                 opacity: 1;
             }
         }
-
-
-.track-list {
-    opacity: 0;
-    animation: fadeIn 5.0s forwards;
-        }
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-
 
 .JavaLogo {
     width: 75px;
@@ -203,6 +118,40 @@ opacity: 0;
         }
 
 
+    
+#contact_form {
+  background-color: #c9745773;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+.row label{
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-left: 10px;
+}
+input[type=text], textarea {
+  text-align: center;
+  background-color: #c9745773;
+  border-radius: 10px;
+  margin: auto 0;
+  color: #FFFFFF;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px #3e4444;
+  }
+input[type=text] {
+  height: 25px;
+}
+input[type=submit] {
+  background-color: #c9745773;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  box-shadow: 5px 5px 5px #3e4444;
+}
+
 #mySidenav a {
   position: fixed; /* Position them relative to the browser window */
   left: -80px; /* Position them outside of the screen */
@@ -222,7 +171,7 @@ opacity: 0;
 /* The about link: 20px from the top with a green background */
 #home {
   top: 20px;
-  background-image: url('images/DiskCase.png');
+  background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -230,7 +179,7 @@ opacity: 0;
 
 #about {
   top: 80px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -238,7 +187,7 @@ opacity: 0;
 
 #past {
   top: 140px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -246,7 +195,7 @@ opacity: 0;
 
 #skills {
   top: 200px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -254,7 +203,7 @@ opacity: 0;
 
 #contact {
   top: 260px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -262,7 +211,7 @@ opacity: 0;
 
 #future {
   top: 320px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -270,7 +219,7 @@ opacity: 0;
 
 #process {
   top: 380px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

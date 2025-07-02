@@ -1,34 +1,33 @@
 body {
-    background-image: url(images/wallv2.PNG);
+    background-image: url(wallv2.PNG);
 }
 
 
 .header {
     text-align: center;
-    color: rgb(224, 214, 214);
+    color: rgb(224, 209, 209);
     font-size: 32px;
     padding: 20px;
 }
 
-.githubLogo {
-    text-align: center;
-    width: 105px;
-    height: 55px;
-}
 
+#PosterTitle {
+  transform: translate(00px, -780px);
+  text-align: center;
+}
 .about-me {
-  font-style: italic;
+    font-style: italic;
     font-family:  "Monaco", "Courier New", monospace;
     text-align: center;;
     font-size: 18px;
     color: rgb(255, 255, 255);
     width: 80%;
     margin: 0 auto;
-    background-color: #c9745773;
+    
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-opacity: 0;
+    opacity: 0;
     animation: fadeIn 1.4s forwards;
         }
         @keyframes fadeIn {
@@ -37,35 +36,23 @@ opacity: 0;
             }
         }
 
-
-.SpeedTypingGameHeader {
-   justify-content: center;
- 
-
+.Headshot {
+    width: 138px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
 }
 
 
-.TypingGameContainer {
-    text-align: center;
-    justify-content: center;;
-
-}
-
-
-.Center {
-    text-align: center;
-    justify-content: center;
-}
-
-.TypingGame {
-    justify-content: center;
-    width: 900px;
-    height: 400px;
-    margin: 0 auto;
-    background-color: #c9745773;
-    padding: 20px;
+.poster-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: fadeIn 1.4s forwards;
 }
 
 #mySidenav a {
@@ -87,7 +74,7 @@ opacity: 0;
 /* The about link: 20px from the top with a green background */
 #home {
   top: 20px;
-  background-image: url('images/DiskCase.png');
+  background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,7 +82,7 @@ opacity: 0;
 
 #about {
   top: 80px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,7 +90,7 @@ opacity: 0;
 
 #past {
   top: 140px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +98,7 @@ opacity: 0;
 
 #skills {
   top: 200px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -119,7 +106,7 @@ opacity: 0;
 
 #contact {
   top: 260px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -127,7 +114,7 @@ opacity: 0;
 
 #future {
   top: 320px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -135,7 +122,7 @@ opacity: 0;
 
 #process {
   top: 380px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

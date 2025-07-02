@@ -31,7 +31,7 @@ body {
 
 #home {
   top: 20px;
-  background-image: url('images/DiskCase.png');
+  background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body {
 
 #about {
   top: 80px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body {
 
 #past {
   top: 140px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,7 +55,7 @@ body {
 
 #skills {
   top: 200px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ body {
 
 #contact {
   top: 260px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@ body {
 
 #future {
   top: 320px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@ body {
 
 #process {
   top: 380px;
-    background-image: url('images/DiskCase.png');
+    background-image: url('DiskCase.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
