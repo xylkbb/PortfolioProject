@@ -23,8 +23,6 @@ const container = document.querySelector('.container');
     // ^^ watched a video on how to do this-- basically makes the dragging effect smoother and work,
     //  keeps ur mouse on the actual disk
 
- 
-
     sliderData.forEach(({ triggerId, slideId, visibleClass }) => {
       const trigger = document.getElementById(triggerId);
       const slider = document.getElementById(slideId);
