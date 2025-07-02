@@ -1,22 +1,3 @@
-const paragraphs = document.querySelectorAll('.section__paragraph');
-
-document.addEventListener("scroll", function(){
-    paragraphs.forEach((paragraph) => {
-        if (isInView(paragraph)) {
-            paragraph.classList.add('section__paragraph--visible');
-        }
-    });
-});
-
-function isInView(element){
-    const rect = element.getBoundingClientRect();
-    return (
-         rect.bottom > 0 && 
-         rect.top < 
-         (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
-    );
-}
-
     const notesLayer = document.getElementById('notes-layer');
     const noteTypes = ['\u266A', '\u266B', '\u266C', '\u2669', '\u266F'];
     const flyingNotes = [], mouse = {x: 0, y: 0};
@@ -77,7 +58,7 @@ function isInView(element){
     }
 
     document.addEventListener('mousemove', e => (mouse.x = e.clientX, mouse.y = e.clientY));
-    setInterval(spawnNote, 3000);
+    setInterval(spawnNote, 3500);
     animateNotes();
 
     Object.assign(notesLayer.style, {

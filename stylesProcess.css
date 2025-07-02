@@ -5,7 +5,7 @@ body {
 
 .header {
     text-align: center;
-    color: black;
+    color: rgb(231, 218, 218);
     font-size: 32px;
     padding: 20px;
 }
@@ -16,7 +16,7 @@ body {
     font-family:  "Monaco", "Courier New", monospace;
     text-align: center;;
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: rgb(242, 234, 234);
     width: 80%;
     margin: 0 auto;
     background-color: #c9745773;
